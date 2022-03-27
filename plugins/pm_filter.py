@@ -351,7 +351,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{files.file_name}"
         buttons = [
             [
-                InlineKeyboardButton('Channel', url='https://t.me/ArkBotz')
+                InlineKeyboardButton('✅Channel', url='https://t.me/ArkBotz')
             ]
             ]
 
@@ -400,7 +400,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{title}"
         buttons = [
             [
-                InlineKeyboardButton('Channel', url='https://t.me/ARKBotz')
+                InlineKeyboardButton('⭕️ Channel', url='https://t.me/ARKBotz')
             ]
             ]
         await query.answer()
