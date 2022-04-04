@@ -419,10 +419,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ], [
             InlineKeyboardButton('🤖 Updates', url='https://t.me/ArkBotz'),
             InlineKeyboardButton('🔐 Close', callback_data='close_data')
+        ], [
+            InlineKeyboardButton('🆘 Help', callback_data='help'),
+            InlineKeyboardButton('👥 About', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
+            text=script.START_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode='html'
         )
