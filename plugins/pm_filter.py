@@ -415,7 +415,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
             InlineKeyboardButton('🕵 Go Inline', switch_inline_query=''),
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔍 Search Here', switch_inline_query_current_chat='')
         ], [
             InlineKeyboardButton('🤖 Updates', url='https://t.me/ArkBotz'),
             InlineKeyboardButton('🔐 Close', callback_data='close_data')
