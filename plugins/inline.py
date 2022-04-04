@@ -104,7 +104,8 @@ def get_reply_markup(query):
     buttons = [
         [
             InlineKeyboardButton('Search again', switch_inline_query_current_chat=query)
-        ]
+            InlineKeyboardButton('Bots', url='t.me/ArkBotz')
+       ]
         ]
     return InlineKeyboardMarkup(buttons)
 
