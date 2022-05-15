@@ -709,7 +709,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         cap = f"© Bot Managed By @ArkBotz ★Here is what i found for your query {search}"
-     if imdb and imdb.get('poster'):
+    if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
                                       reply_markup=InlineKeyboardMarkup(btn))
